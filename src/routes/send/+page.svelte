@@ -5,6 +5,8 @@
 
     const handleSubmit = () => {
         console.log({ days, title, message });
+        // '/sent' 페이지로 이동
+        window.location.href = '/sent';
     };
 
     const handleSkip = () => {
