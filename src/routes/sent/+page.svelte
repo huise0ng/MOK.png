@@ -66,6 +66,6 @@
     <h1>미래로 편지를 보냈어.</h1>
     <p>편지가 도착하면 알려줄게.</p>
     <img src="/sent.svg" alt="Sent" class="image" />
-    <button on:click={() => window.location.href = '/'}>홈으로</button>
+    <button on:click={() => window.location.href = '/home'}>홈으로</button>
   </div>
   
