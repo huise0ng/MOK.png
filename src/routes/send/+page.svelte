@@ -64,12 +64,13 @@
     }
 
     .white-box {
-        width: 314px;
+        width: 280px;
         height: 332px;
         background-color: #FFFFFF;
         border-radius: 8px;
         margin-top: 70px;
         position: relative;
+        padding: 20px; 
     }
 
     .white-box-label {
@@ -81,7 +82,21 @@
         padding-left: 10px;
         font-size: 20px;
         color: #732F4B;
-        margin-left: -10px;
+        margin-left: -8px;
+    }
+
+    textarea {
+        width: 100%;
+        height: calc(100% - 20px); 
+        border: none;
+        resize: none;
+        background-color: transparent;
+        font-size: 18px;
+        color: #FF3E7A;
+        outline: none;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 8px;
     }
 
     .button-container {
@@ -141,6 +156,7 @@
     <div class="white-box">
         <!-- svelte-ignore a11y-label-has-associated-control -->
         <label class="white-box-label">어떤 내용을 작성하고 싶어?</label>
+        <textarea bind:value={message} placeholder="이야기를 적어줘."></textarea>
     </div> 
 
     <div class="button-container">
