@@ -141,10 +141,10 @@
     <div class="white-box">
         <!-- svelte-ignore a11y-label-has-associated-control -->
         <label class="white-box-label">어떤 내용을 작성하고 싶어?</label>
-    </div>
+    </div> 
 
     <div class="button-container">
-        <button on:click={handleSubmit}>작성했어</button>
+        <button on:click={handleSubmit}>작성 완료</button>
     </div>
 
     <!-- svelte-ignore a11y-click-events-have-key-events -->
