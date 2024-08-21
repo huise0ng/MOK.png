@@ -68,7 +68,7 @@
         font-size: 14px;
         font-weight: Regular;
         color: #000000; 
-    }
+    } 
 </style>
 
 <div class="container">
