@@ -67,7 +67,7 @@
     .user-info .email {
         font-size: 14px;
         font-weight: Regular;
-        color: #000000;
+        color: #000000; 
     }
 </style>
 
