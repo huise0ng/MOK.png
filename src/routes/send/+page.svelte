@@ -5,7 +5,6 @@
 
     const handleSubmit = () => {
         console.log({ days, title, message });
-        // '/sent' 페이지로 이동
         window.location.href = '/sent';
     };
 
@@ -17,7 +16,7 @@
 <style>
     .container {
         width: 375px;
-        height: 931px;
+        height: 960px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -36,7 +35,7 @@
         font-size: 28px;
         font-weight: Extrabold; 
         margin-bottom: 50px; 
-        margin-top: -50px;
+        margin-top: 50px;
         text-align: left; 
         padding-left: 20px;
         width: calc(100% - 40px); 
@@ -103,7 +102,8 @@
 
     .button-container {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         width: calc(100% - 40px); 
         margin-top: 50px; 
     }
@@ -111,61 +111,50 @@
     button {
         width: 310px;
         height: 50px;
-        background-color: #FF3E7A;
         border: none;
         border-radius: 8px;
         color: #FFFFFF;
-        font-size: 18pt;
+        font-size: 16pt;
         font-family: 'Pretendard', sans-serif;
         font-weight: 400;
         cursor: pointer;
-        position: absolute;
-        bottom: 100px;
-        left: 50%; 
-        transform: translateX(-50%); 
+        margin-bottom: 20px; 
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    button:hover {
+    button:first-of-type {
+        background-color: #FF3E7A;
+    }
+
+    button:first-of-type:hover {
         background-color: #e03570;
     }
 
-    .skip-text {
-        font-size: 16px;
+    .share-button {
         color: #FF3E7A;
-        cursor: pointer;
-        position: absolute;
-        bottom: 60px; 
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
+        border: 2px solid #FF3E7A;
     }
 
-    .skip-text:hover {
-        text-decoration: underline;
-    }
+
 
 </style>
 
 <div class="container">
-    <h1>미래의 너에게 <br>전하고 싶은 말을 쓸 수 있어.</h1>
+    <h1>너 또는 친구에게<br>전하고 싶은 말을 쓸 수 있어.</h1>
     
-    <label for="days">몇일 후의 너에게 전하고 싶어?</label>
+    <label for="days">몇일 후에 볼 수 있으면 좋겠어?</label>
     <input type="text" id="days" bind:value={days} placeholder="여기에 입력해줘." />
 
     <div class="white-box">
         <!-- svelte-ignore a11y-label-has-associated-control -->
         <label class="white-box-label">어떤 내용을 작성하고 싶어?</label>
-        <textarea bind:value={message} placeholder="이야기를 적어줘."></textarea>
+        <textarea bind:value={message} placeholder="하고 싶은 이야기를 적어줘."></textarea>
     </div> 
 
     <div class="button-container">
         <button on:click={handleSubmit}>작성 완료</button>
+        <button class="share-button" on:click={handleSubmit}>친구에게 공유하기</button> 
     </div>
-
-    <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <!-- svelte-ignore a11y-no-static-element-interactions -->
-    <div class="skip-text" on:click={handleSkip}>건너뛰기</div>
 </div>

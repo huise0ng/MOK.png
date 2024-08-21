@@ -33,11 +33,11 @@
 .signup-button {
     width: 310px;
     height: 50px;
-    background-color: #FF3E7A;
+    background-color: #FEE500;
     border: none;
     border-radius: 8px;
-    color: #FFFFFF;
-    font-size: 18pt;
+    color: #181600;
+    font-size: 16pt;
     font-family: 'Pretendard', sans-serif;
     font-weight: 400;
     cursor: pointer;
@@ -54,6 +54,6 @@
 <div class="container"> 
     <img src="/logo.svg" alt="Logo" class="logo">
     <button class="signup-button" on:click={handleSignupClick}>
-        회원가입
+        카카오 로그인
     </button>
 </div>
