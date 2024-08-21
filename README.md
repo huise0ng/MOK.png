@@ -11,6 +11,9 @@
 - 친구에게 미래 편지를 공유할 수 있어요.
 - 카카오톡 친구에게 미래 편지를 공유할 수 있어요.
 
+## 사용 기술
+[![My Skills](https://skillicons.dev/icons?i=svelte,fastapi,mongodb,figma)](https://skillicons.dev)
+
 ## 빠르게 사용해보기
 쉽고 간단하게 빠르게 사용해볼 수 있어요.
 ### 시작페이지
