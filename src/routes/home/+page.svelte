@@ -1,16 +1,67 @@
 <script>
-    let cards = [
-        { id: 1, recipient: '희성', date: '6월 18일', icon: 'diamond.svg', timeLeft: '79:33', daysLeft: '약 3일 남음', bgColor: '#DBE1FF', width: '130px', height: '224px', marginLeft: '16px', marginTop: '0px' },
-        { id: 2, recipient: '희성', date: '6월 18일', icon: '', timeLeft: '79:33', daysLeft: '약 3일 남음', bgColor: '#B4F6C8', width: '149px', height: '141px', marginLeft: '-6px', marginTop: '0px' },
-        { id: 3, recipient: '희성', date: '6월 18일', icon: 'gift.svg', timeLeft: '79:33', daysLeft: '약 3일 남음', bgColor: '#FFDBF5', width: '130px', height: '201px', marginLeft: '16px', marginTop: '0px' },
-        { id: 4, recipient: '희성', date: '6월 18일', icon: 'ribon.svg', timeLeft: '79:33', daysLeft: '약 3일 남음', bgColor: '#FFDFDB', width: '149px', height: '218px', marginLeft: '-6px', marginTop: '-80px' }, 
-    ];
+    const card1 = {
+        id: 1,
+        recipient: '희성',
+        date: '6월 18일',
+        icon: 'diamond.svg',
+        timeLeft: '79:33',
+        daysLeft: '약 3일 남음',
+        bgColor: '#DBE1FF',
+        width: '130px',
+        height: '224px',
+        marginLeft: '16px',
+        marginTop: '0px'
+    };
+
+    const card2 = {
+        id: 2,
+        recipient: '희성',
+        date: '6월 18일',
+        icon: '',
+        timeLeft: '79:33',
+        daysLeft: '약 3일 남음',
+        bgColor: '#B4F6C8',
+        width: '149px',
+        height: '141px',
+        marginLeft: '-6px',
+        marginTop: '0px'
+    };
+
+    const card3 = {
+        id: 3,
+        recipient: '희성',
+        date: '6월 18일',
+        icon: 'gift.svg',
+        timeLeft: '79:33',
+        daysLeft: '약 3일 남음',
+        bgColor: '#FFDBF5',
+        width: '130px',
+        height: '201px',
+        marginLeft: '16px',
+        marginTop: '0px'
+    };
+
+    const card4 = {
+        id: 4,
+        recipient: '희성',
+        date: '6월 18일',
+        icon: 'ribon.svg',
+        timeLeft: '79:33',
+        daysLeft: '약 3일 남음',
+        bgColor: '#FFDFDB',
+        width: '149px',
+        height: '218px',
+        marginLeft: '-6px',
+        marginTop: '-80px'
+    };
+
+    const cards = [card1, card2, card3, card4];
 </script>
 
 <style>
     .container {
         width: 375px;
-        height: 960px;
+        height: 812px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -76,16 +127,16 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-left: 0px; /* Default margin-left */
-        margin-top: 0px;  /* Default margin-top */
+        margin-left: 0px; 
+        margin-top: 0px; 
     }
 
     .card img {
         width: 74px;
         height: 74px;
         margin-bottom: 10px;
-        
-        
+        margin-top: auto;  
+        transform: translateY(-30%); 
     }
 
     .card h2 {
