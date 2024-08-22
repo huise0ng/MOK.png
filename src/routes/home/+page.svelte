@@ -9,7 +9,7 @@
         bgColor: '#DBE1FF',
         width: '130px',
         height: '224px',
-        marginLeft: '16px',
+        marginLeft: '5px',
         marginTop: '0px'
     };
 
@@ -37,7 +37,7 @@
         bgColor: '#FFDBF5',
         width: '130px',
         height: '201px',
-        marginLeft: '16px',
+        marginLeft: '5px',
         marginTop: '0px'
     };
 
@@ -132,22 +132,25 @@
     }
 
     .card img {
-        width: 74px;
-        height: 74px;
-        margin-bottom: 10px;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 8px;
         margin-top: auto;  
         transform: translateY(-30%); 
+        align-items: center;
+        margin-left: 20px;
+
     }
 
     .card h2 {
-        color: #333;
-        font-size: 24px;
+        color: #000000;
+        font-size: 26px;
         margin: 0;
     }
 
     .card p {
-        font-size: 14px;
-        color: #666;
+        font-size: 12px;
+        color: #363636;
         margin: 0;
     }
 </style>
